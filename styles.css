@@ -1,0 +1,322 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400);
+
+/**********************************************************************************************/
+/* Credits and Resources:                                                                     */
+/* Classic Skrollr by Prinzhorn: https://github.com/Prinzhorn/skrollr/tree/master/examples    */
+/* Mobil nav: https://getbootstrap.com/examples/navbar/                                       */
+/* Animated Menu X: http://julienmelissas.com/animated-x-icon-for-the-bootstrap-navbar-toggle/*/
+/* Smooth Scrolling: https://css-tricks.com/snippets/jquery/smooth-scrolling/                 */
+/**********************************************************************************************/
+  
+     /* Navigation */
+
+    
+.navbar-default navbar-toggle .icon-bar {
+    background-color: #000000 !important;
+}
+
+.navbar-default{
+    background:none;    
+    border:0;
+    position:absolute;
+    top:15px;
+    right:15px; 
+}
+.navbar-collapse{
+    background:#f5f5f5; 
+}
+.navbar-collapse.collapse{
+    display: none!important;
+    height: 0!important;
+    padding-bottom: 0;
+    overflow: hidden!important;
+    margin: 0 auto; 
+    max-width: 1000px;
+}
+.navbar-toggle.collapsed{
+    display:block!important;    
+}
+.navbar-toggle{
+    display:block!important;    
+}
+.navbar-collapse.collapse.in{
+    display:block!important;    
+    height:auto!important;
+    overflow:visible!important;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7); 
+}
+
+.navbar-nav {
+    text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.navbar-nav>li,.navbar-header{
+    float:none;
+    letter-spacing: .1em;
+    font-weight: lighter;
+    text-transform: uppercase; 
+}
+.navbar-default .navbar-toggle.collapsed{
+    background:#fff;   
+}
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+  -ms-transform;
+  -ms-transform-origin;
+  -webkit-transform;
+  -webkit-transform-origin
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+  -ms-transform;
+  -ms-transform-origin;
+  -webkit-transform;
+  -webkit-transform-origin
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+  -ms-transform;
+  -ms-transform-origin;
+  -webkit-transform;
+  -webkit-transform-origin
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+  -ms-transform;
+  -ms-transform-origin;
+  -webkit-transform;
+  -webkit-transform-origin
+}
+
+
+/* Site */
+
+* {
+    padding:0;
+    margin:0;
+}
+
+html, body {
+    height:100%;
+    background: #ffffff;
+    /*background: #eeeeee;*/
+}
+
+.skrollr-desktop body {
+    height:100% !important;
+}
+
+body {
+    font-family:sans-serif;
+}
+
+h1{
+    font-size:2.91em;
+    margin:0;
+    letter-spacing: .1em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+h2 {
+  color:inherit;
+  font-size:1.91em;
+  margin:.5em 0 1em 0;
+  letter-spacing: .1em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align:center;
+}
+
+h3 {
+    color:inherit;
+    font-size:.75em;
+    margin:.75em 0 1em 0;
+    letter-spacing: .1em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+p {
+    margin:1em 0;
+}
+
+#gapwrap {
+    margin: 2em; 
+    position:relative;
+    overflow:hidden;
+}
+
+.parallax-image-wrapper {
+    position:fixed;
+    left:0;
+    width:100%;
+    overflow:hidden;
+}
+
+.parallax-image-wrapper-50 {
+    height:50%;
+    top:-50%;
+}
+
+.parallax-image-wrapper-100 {
+    height:100%;
+    top:-100%;
+}
+
+.parallax-image {
+    display:none;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.parallax-image-50 {
+    height:200%;
+    top:-50%;
+}
+
+.parallax-image-100 {
+    height:100%;
+    top:0;
+}
+
+.parallax-image.skrollable-between {
+    display:block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+    display:none !important;
+}
+
+#skrollr-body {
+    height:100%;
+    overflow:visible;
+    position:relative;
+}
+
+.gap {
+    background:transparent center no-repeat;
+    background-size:cover;
+}
+
+.skrollr .gap {
+    background:transparent !important;
+}
+
+.gap-50 {
+    height:50%;
+}
+
+.gap-100 {
+    height:100%;
+}
+
+.header, .content {
+    background: #eeeeee;
+    padding:3em;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.content-full {
+    height:100%;
+}
+
+/* Footer */
+
+.footer {
+    color:inherit;
+    font-size:.75em;
+    margin:.75em 0 1em 0;
+    letter-spacing: .1em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+.footer p {
+    color:inherit;
+    font-size:.75em;
+    margin:.75em 0 1em 0;
+    letter-spacing: .05em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+.footer .modal-content {
+    padding:.75em;
+}
+
+.mobile-footer {
+    color:inherit;
+    font-size:.50em;
+    margin:.75em 0 1em 0;
+    letter-spacing: .05em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+/*--------------------------------------------------------------
+ Responsive
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+ x => 1024
+--------------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+
+.mobile-footer {
+    display:none;
+    }
+}
+/*--------------------------------------------------------------
+ x =< 1024
+--------------------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+
+ .navbar{
+    display:none;
+ }
+
+ .footer{
+    display:none;
+ }
+
+}
+
+

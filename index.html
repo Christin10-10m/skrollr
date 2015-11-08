@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="no-skrollr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Title - Title tag for site</title>
+    <meta name="description" content="Description of site">
+    <meta name="keywords" content="some, key, words">
+    <meta name="author" content="Your Name">
+    <meta name="page-topic" content="Page, Topics">
+
+    <!-- Styles and Scripts -->
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'>
+    <link href="styles.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet/less" type="text/css" href="less/style.less" />
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script type="text/javascript">
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+</head>
+
+<body>
+ <div class="container"><!-- Static navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#dragons">Home</a></li>
+          <li><a href="#bacons" data-menu-target="#bacons">Contact</a></li>
+          <li><a href="#hobbits">Research</a></li>
+          <li><a href="#manticore">Portfolio</a></li>
+          <li><a href="#kittens">Students</a></li>
+          <li><a href="#unicorns">About</a></li>
+          <li><a href="#done">CV</a></li>
+          </li>       
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+  </div><!--/.container -->
+    <!--
+        position the images fixed and therefore need to place them outside of #skrollr-body.
+        then use data-anchor-target to display the correct image matching the current section (.gap element).
+    -->
+
+    <div
+        class="parallax-image-wrapper parallax-image-wrapper-100"
+        data-anchor-target="#dragons + .gap"
+        data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+        data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+        <div
+            class="parallax-image parallax-image-100"
+            style="background-image:url(images/city_traffic.jpg)"
+            data-anchor-target="#dragons + .gap"
+            data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+            data-top-bottom="transform: translate3d(0px, 80%, 0px);"
+        ></div>
+        <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+    </div>
+
+    <div
+        class="parallax-image-wrapper parallax-image-wrapper-50"
+        data-anchor-target="#bacons + .gap"
+        data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+        data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+        <div
+            class="parallax-image parallax-image-50"
+            style="background-image:url(images/airplane.jpg)"
+            data-anchor-target="#bacons + .gap"
+            data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+            data-top-bottom="transform: translate3d(0px, 60%, 0px);">
+        </div>
+    </div>
+
+    <div
+        class="parallax-image-wrapper parallax-image-wrapper-50"
+        data-anchor-target="#hobbits + .gap"
+        data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+        data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+        <div
+            class="parallax-image parallax-image-50"
+            style="background-image:url(images/hauptbahnhof.jpg)"
+            data-anchor-target="#hobbits + .gap"
+            data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+            data-top-bottom="transform: translate3d(0px, 60%, 0px);">
+        </div>
+    </div>
+
+    <div
+        class="parallax-image-wrapper parallax-image-wrapper-50"
+        data-anchor-target="#manticore + .gap"
+        data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+        data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+        <div
+            class="parallax-image parallax-image-50"
+            style="background-image:url(images/airport.jpg)"
+            data-anchor-target="#manticore + .gap"
+            data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+            data-top-bottom="transform: translate3d(0px, 60%, 0px);">
+        </div>
+    </div>
+
+    <div
+        class="parallax-image-wrapper parallax-image-wrapper-50"
+        data-anchor-target="#kittens + .gap"
+        data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+        data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+        <div
+            class="parallax-image parallax-image-50"
+            style="background-image:url(images/freeway_overpass.jpg)"
+            data-anchor-target="#kittens + .gap"
+            data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+            data-top-bottom="transform: translate3d(0px, 60%, 0px);">
+        </div>
+    </div>
+
+    <div
+        class="parallax-image-wrapper parallax-image-wrapper-50"
+        data-anchor-target="#unicorns + .gap"
+        data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+        data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+        <div
+            class="parallax-image parallax-image-50"
+            style="background-image:url(images/bicyclist.jpg)"
+            data-anchor-target="#unicorns + .gap"
+            data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+            data-top-bottom="transform: translate3d(0px, 60%, 0px);">
+        </div>
+    </div>
+
+        <div
+            class="parallax-image-wrapper parallax-image-wrapper-100"
+            data-anchor-target="#done + .gap"
+            data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+            data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+            <div
+                class="parallax-image parallax-image-100"
+                style="background-image:url(images/ghost.jpg)"
+                data-anchor-target="#done + .gap"
+                data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+                data-top-bottom="transform: translate3d(0px, 80%, 0px);">
+            </div>
+        </div>
+
+    <div id="skrollr-body">
+            <div class="header" id="dragons">
+                <h1>Title</h1>
+            </div>
+        <div class="gap gap-100" style="background-image:url(images/city_traffic.jpg);"></div>
+
+        <div class="content" id="bacons">
+                <h2>Contact</h2>
+                    <p>Satue of Liberty<br>
+                    National Monument<br>
+                    New York, NY<br>
+                    <br><br>
+                    Libby at nationalmonument.gov<br><br>
+                    1 800 000 0000</p>
+        </div>
+
+        <div class="gap gap-50" style="background-image:url(images/airplane.jpg);"></div>
+            <div class="content" id="hobbits">
+                    <h2>Research</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+        <div class="gap gap-50" style="background-image:url(images/hauptbahnhof.jpg);"></div>
+        <div class="content" id="manticore">
+                    <h2>Portfolio</h2>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+        </div>
+        <div class="gap gap-50" style="background-image:url(airport.jpg);"></div>
+            <div class="content" id="kittens">
+                <h2>Students</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br><br>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+        <div class="gap gap-50" style="background-image:url(images/freeway_overpass.jpg);"></div>
+        <div class="content" id="unicorns">
+            <h2>About</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+        </div>
+        <div class="gap gap-50" style="background-image:url(images/bicyclist.jpg);"></div>
+        <div class="content" id="done">
+            <h2>CV</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            <br><br>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </p>
+        </div> 
+        <div class="gap gap-100" style="background-image:url(images/ghost.jpg);"></div> 
+            <div class="footer">
+               <h1>The End</h1>
+               <a href="#dragons">Back to Top</a> |
+               <!-- Small modal -->
+                <a href="#myModal" role="button" class="credits" data-toggle="modal" data-target=".bs-example-modal-sm">Photo Credits</a>
+
+                <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <p><a href="https://www.flickr.com/photos/davidyuweb/11660266586/" target="_blank">1. David Yu, “Potrero Hill Night Colors - San Francisco”</a><br><br>
+
+                        <a href="https://www.flickr.com/photos/dheuts/3690181378" target="_blank">2.Dave Heuts, “A Plane Right Over Your Head"</a><br><br>
+
+                        <a href="https://www.flickr.com/photos/paolomargari/4907801314/" target="_blank">3.Paolo Margari, “Hauptbahnhof, Berlin"</a><br><br>
+
+                        <a href="https://www.flickr.com/photos/aerialcamera/10934372444/" target="_blank">4.Daniel Piraino, “Orlando Sanford International Airport - KSFB”</a><br><br>
+
+                        <a href="https://www.flickr.com/photos/orinrobertjohn/2792132092/" target="_blank">5.Prin Zebest, “Betwixt Pillars”</a><br><br>
+
+                        <a href="https://www.flickr.com/photos/pixspotting/15835246129/" target="_blank">6. Pix Spotting, "Paris Bicycles"</a><br><br>
+
+                        <a href="https://www.flickr.com/photos/nickharris1/7004114708/" target="_blank">7.Nick Harris, “Airport Traveller”</a></p>
+                    </div> <!--/.modal-content -->
+                  </div> <!--/.modal-dialog -->
+                </div> <!--/.modal -->
+            </div>  <!--/.footer -->
+             <div class="mobile-footer">
+               <h1>The End</h1>
+               <p>Photo Credits:<br><br>
+                        <a href="https://www.flickr.com/photos/davidyuweb/11660266586/" target="_blank">1. David Yu, “Potrero Hill Night Colors - San Francisco”</a><br><br>
+
+                        <a href="https://www.flickr.com/photos/dheuts/3690181378" target="_blank">2.Dave Heuts, “A Plane Right Over Your Head"</a><br><br>
+
+                        <a href="https://www.flickr.com/photos/paolomargari/4907801314/" target="_blank">3.Paolo Margari, “Hauptbahnhof, Berlin"</a><br><br>
+
+                        <a href="https://www.flickr.com/photos/aerialcamera/10934372444/" target="_blank">4.Daniel Piraino, “Orlando Sanford International Airport - KSFB”</a><br><br>
+
+                        <a href="https://www.flickr.com/photos/orinrobertjohn/2792132092/" target="_blank">5.Prin Zebest, “Betwixt Pillars”</a><br><br>
+
+                        <a href="https://www.flickr.com/photos/pixspotting/15835246129/" target="_blank">6. Pix Spotting, "Paris Bicycles"</a><br><br>
+
+                        <a href="https://www.flickr.com/photos/nickharris1/7004114708/" target="_blank">7.Nick Harris, “Airport Traveller”</a></p>
+             </div>
+    </div> <!--/.skrollr-body -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+    skrollr.init({
+        smoothScrolling: false,
+        mobileDeceleration: 0.004,
+        animate: true,
+        updateUrl: false,
+    });
+    </script>
+        <script type="text/javascript" src="skrollr.menu.min.js">
+  $(document).ready(function(){
+    var s = skrollr.init();
+    
+    skrollr.menu.init(s, {
+    //skrollr will smoothly animate to the new position using `animateTo`.
+    animate: true,
+
+    //Multiply your data-[offset] values so they match those set in skrollr.init
+    scale: 2,
+
+    updateUrl: false,
+
+    //How long the animation should take in ms.
+    duration: function(currentTop, targetTop) {
+        //By default, the duration is hardcoded at 500ms.
+        return 800;
+
+        //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+        return Math.abs(currentTop - targetTop) * 40;
+    },
+
+    });
+  });
+
+</script>
+<script type="text/javascript">
+        //Hamburger menu toggle
+  $(".navbar-nav li a").click(function (event) {
+    // check if window is small enough so dropdown is created
+    var toggle = $(".navbar-toggle").is(":visible");
+    if (toggle) {
+      $(".navbar-collapse").collapse('hide');
+    }
+  });
+    </script>
+</body>
+
+</html>
